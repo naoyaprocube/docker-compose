@@ -73,7 +73,6 @@ services:
     - ./nginx/ssl/self-ssl.key:/etc/nginx/ssl/self-ssl.key:ro
     ports:
     - 443:443
-    - 444:444
     links:
     - guacamole
     - fileserver
