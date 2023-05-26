@@ -9,10 +9,10 @@ RUN npm install
 COPY fastify-files-backend/. /usr/src/app/fastify
 RUN mkdir /usr/src/app/react-admin
 WORKDIR /usr/src/app/react-admin
-COPY react-admin-files-frontend/package.json /usr/src/app/react-admin
-COPY react-admin-files-frontend/package-lock.json /usr/src/app/react-admin
+COPY react-admin-frontend/package.json /usr/src/app/react-admin
+COPY react-admin-frontend/package-lock.json /usr/src/app/react-admin
 RUN npm install
-COPY react-admin-files-frontend/. /usr/src/app/react-admin
+COPY react-admin-frontend/. /usr/src/app/react-admin
 COPY startup.sh /startup.sh
 COPY startup-fastify.sh /startup-fastify.sh
 COPY startup-react-admin.sh /startup-react-admin.sh
