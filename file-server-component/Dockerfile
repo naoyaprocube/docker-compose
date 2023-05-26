@@ -1,4 +1,4 @@
-FROM node:19
+FROM node:18
 ENV NODE_OPTIONS --openssl-legacy-provider
 RUN mkdir -p /usr/src/app
 RUN mkdir /usr/src/app/fastify
